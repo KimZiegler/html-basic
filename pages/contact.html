@@ -4,17 +4,44 @@
 <meta charset="UTF-8">
 <title>Contact</title>
 </head>
-
+<style>
+/* Form Style */
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 3px solid #929292;
+	padding: 20px;
+}
+</style>
 <body>
-	<header><!-- semantisk HTML: sidehovedet-->
+<header><!-- semantisk HTML: sidehovedet-->
   <h1>contact</h1>
 </header>
-<nav>
-	<a href="../index.html">Home</a>
-	<a href="hello-world.html">Hello world</a>
-	<a href="https://www.cphbusiness.dk/" target="_blank">My school</a>
-	<a href="tables.html">tables</a>
-	<a href="#">contact</a>
-	</nav>
+<nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello world</a> <a href="https://www.cphbusiness.dk/" target="_blank">My school</a> <a href="tables.html">tables</a> <a href="#">contact</a> </nav>
+<!-- webform -->
+<form action="mailto:k.ziegler93@gmail.com" method="post" enctype="text/plain">
+  <p>
+    <label>Your Name:</label>
+  </p>
+  <p>
+    <input type="text" name="name" placeholder="Type your name.." autofocus required>
+  </p>
+  <p>
+    <label>Your Email:</label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder="Type a valid mail address.." autofocus required>
+  <p>
+    <label>Your Message:</label>
+  </p>
+  </p>
+  <p>
+    <textarea name="comment" placeholder="Your message..."></textarea>
+  </p>
+  <p>HAHA
+    <input type="radio" name="love">
+  </p>
+  <input type="submit" value="Submit Form">
+</form>
 </body>
 </html>
